@@ -20,7 +20,7 @@ const orderSchema = mongoose.Schema({
         }
     ],
     shippingAddress: {
-        adress: { type: String, required: true},
+        address: { type: String, required: true},
         city: { type: String, required: true},
         postalCode: { type: String, required: true},
         country: { type: String, required: true},
@@ -35,7 +35,7 @@ const orderSchema = mongoose.Schema({
         update_time: {type: String},
         email_address: {type: String},
     },
-    itempsPrice: {
+    itemsPrice: {
         type: Number,
         required: true,
         default: 0.0,
